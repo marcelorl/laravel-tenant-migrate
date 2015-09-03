@@ -41,14 +41,16 @@ class MigrateTenantDabataseCommand extends Command {
 	{
 		$connectionName = $this->argument('connection-name');
 		$databaseName = $this->argument('database-name');
-		
+
+		$path = $this->option('path');
+
 		\Config::set('database.connections.'.$connectionName.'.database', $databaseName);
 		$connection = \DB::reconnect($connectionName);
 		\DB::setDefaultConnection($connectionName);
 
 		$this->info('Creating migration table in tenant database "'.$databaseName.'"...');
 
-		$this->call('migrate');
+		$this->call('migrate', ['--path' => $path]);
 	}
 
 	/**
@@ -72,7 +74,7 @@ class MigrateTenantDabataseCommand extends Command {
 	protected function getOptions()
 	{
 		return array(
-			//array('example', null, InputOption::VALUE_OPTIONAL, 'An example option.', null),
+			array('path', null, InputOption::VALUE_OPTIONAL, 'Path where the migrations are placed.', null),
 		);
 	}
 
