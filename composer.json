@@ -1,11 +1,11 @@
 {
-    "name": "quicktech/laravel-tenant-migrate",
-    "description": "A2Way Laravel Tenant Migrate",
+    "name": "quicktech/tenant-migrate-laravel",
+    "description": "Copy of A2Way Laravel Tenant Migrate",
     "keywords": ["a2way", "laravel"],
     "authors": [
         {
             "name": "Supun Budhajeewa",
-            "email": "budhajeewa@gmail.com"
+            "email": "marcelo@quicktech.no"
         }
     ],
     "require": {
