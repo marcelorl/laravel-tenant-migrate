@@ -18,6 +18,16 @@ Installing A2Way Laravel Tenant Migrate on your Laravel project will add followi
 
 Each of above commands will perform the task of their cousin commands that has the similar name but for “tenant”. For an example, **migrate:tenant:refresh myConnection myDatabase** will run **migrate:refresh** on **myDatabase**, accessing it through connection details given in **myConnection**.
 
+An example of usage through a controller is:
+
+```
+Artisan::call('migrate:tenant', [
+	'connection-name' => 'mysql',
+	'database-name'     => 'test',
+	'--path' => 'database/migrations/tenant'
+]);
+```
+
 ##Installing
 
 1. Issue the following command:
