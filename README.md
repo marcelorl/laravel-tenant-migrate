@@ -1,4 +1,4 @@
-#A2Way Laravel Tenant Migrate
+# A2Way Laravel Tenant Migrate
 
 A2Way Laravel Tenant Migrate is a Laravel package that can be used to migrate different databases without editing database configuration files.
 
@@ -6,7 +6,7 @@ This is specially useful for SaaS (Software as a Service) web applications that 
 
 A2Way Laravel Tenant Migrate can help you overcome this problem.
 
-##Commands Available
+## Commands Available
 
 Installing A2Way Laravel Tenant Migrate on your Laravel project will add following commands to your artisan tool.
 
@@ -28,7 +28,7 @@ Artisan::call('migrate:tenant', [
 ]);
 ```
 
-##Installing
+## Installing
 
 1. Issue the following command:
 
@@ -40,6 +40,6 @@ Artisan::call('migrate:tenant', [
 
 1. Check the installation by issuing "php artisan command". If you are able to see the above commands in your list of commands, installation was successful.
 
-##Contributing
+## Contributing
 
 Please read [http://a2way.com/contributing/](http://a2way.com/contributing/) before contributing.
